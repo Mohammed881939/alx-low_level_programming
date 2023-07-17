@@ -1,13 +1,10 @@
 #include<stdio.h>
 
 /**
- * main - Entry point
+ * main - Entry function
  *
- * Description: print alphabet is lowercase then in upercase
- *
- * Return: Always 0 (Success)
+ * Return: Always 0
  */
-
 int main(void)
 {
 	char i;
