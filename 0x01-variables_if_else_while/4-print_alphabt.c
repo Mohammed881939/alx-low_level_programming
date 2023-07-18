@@ -1,7 +1,7 @@
 #include<stdio.h>
 
 /**
- * main -  Entry point
+ * main - Entry point
  *
  * Description: print all aplhabet letters except q and e
  *
@@ -19,7 +19,7 @@ int main(void)
 		putchar(ch);
 		ch++;
 	}
-	putchar('\n')
+	putchar('\n');
 
 	return (0);
 }
