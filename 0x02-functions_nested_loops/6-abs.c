@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _abs - function that computers the obsolute
+ * _abs - function that computes the obsolute
  *      value of an integer
  *
  * @n: takes in integer type input for function
