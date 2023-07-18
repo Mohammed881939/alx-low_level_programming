@@ -4,8 +4,8 @@
  * times_table - prints the 9 times table
  *
  * Example Table
- * 0. 0. 0. 0. ..
- * 0. 1. 2. 3. ..
+ * 0, 0, 0, 0, ,,
+ * 0, 1, 2, 3, ,,
  *
  */
 
