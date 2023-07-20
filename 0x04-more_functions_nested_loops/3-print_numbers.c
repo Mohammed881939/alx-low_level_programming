@@ -7,7 +7,7 @@
  * Return: Always 0 (Success)
  */
 
-int print_numbers(void)
+void print_numbers(void)
 {
 	int num = 0;
 
@@ -17,4 +17,3 @@ int print_numbers(void)
 	} while (num >= 0 && num <= 90);
 	_putchar('\n');
 }
-
