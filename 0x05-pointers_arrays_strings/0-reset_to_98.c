@@ -11,6 +11,7 @@ int main(void)
 	int = n;
 
 	n = 402;
+	n = 98;
 	_putchar("n=%d\n", n);
 	reset_to_98(&n);
 	_putchar("n=%d\n", n);
