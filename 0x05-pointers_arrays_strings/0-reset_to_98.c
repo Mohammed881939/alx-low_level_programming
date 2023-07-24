@@ -2,16 +2,18 @@
 #include <stdio.h>
 
 /**
- * main - check the code
+ * reset_to_98 - check the code
+ * @n: intger input pointer
  *
  * Return: Always 0 (Success)
  */
-int main(void)
+void reset_to_98(int *n)
 {
 	int = n;
 
 	n = 402;
-	n = 98;
+	int *ptr
+	ptr = 98;
 	_putchar("n=%d\n", n);
 	reset_to_98(&n);
 	_putchar("n=%d\n", n);
