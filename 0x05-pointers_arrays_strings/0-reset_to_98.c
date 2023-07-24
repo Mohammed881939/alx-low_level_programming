@@ -1,21 +1,14 @@
-#include "main.h"
 #include <stdio.h>
 
 /**
- * reset_to_98 - check the code
- * @n: intger input pointer
+ * reset_to_98 - Takes a pointer to an int and updates
+ * the value in points to 98
  *
- * Return: Always 0 (Success)
+ * @n:An integer input pointer
+ *
+ * Return: empty
  */
 void reset_to_98(int *n)
 {
-	int = n;
-
-	n = 402;
-	int *ptr
-	ptr = 98;
-	_putchar("n=%d\n", n);
-	reset_to_98(&n);
-	_putchar("n=%d\n", n);
-	return (0);
+	*n = 98;
 }
