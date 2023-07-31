@@ -2,24 +2,31 @@
 #include <stdio.h>
 
 /**
- * print_chessboard - Funtion that prints the chessboard.
- * @a:type char str
+ * print_diagsums - Print the sum of the two digonal of a square.
+ * @a: type char string
+ * @size: type int
  * Return: Always 0.
  */
-void print_chessboard(char (*a)[8])
+void print_diagsums(int *a, int size)
 {
-	int x, y;
+	int x, val, sum, sum2;
 
 	x = 0;
-	while (x < 8)
+	val = 0;
+	sum = 0;
+	sum2 = 0;
+	while (x < (size * size))
 	{
-		y = 0;
-		while (y < 8)
-		{
-			_putchar(a[x][y]);
-			y++;
-		}
-		_putchar('\n');
-		x++;
+		val = a[x];
+		sum = sum + val;
+		x = x + size + 1;
 	}
+	x = size - 1;
+	while (x < ((size * size) - 1))
+	{
+		val = a[x];
+		sum2 = sum2 + val;
+		x = x + (size - 1);
+	}
+	printf("%d, %d\n", sum, sum2);
 }
