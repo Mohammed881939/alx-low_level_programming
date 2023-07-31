@@ -2,33 +2,21 @@
 #include <stdio.h>
 
 /**
- * _strspn - gets the lenght of a prefix substring.
- * @s: type char returns the number of bytes
- * @accept: bytes from accept
- * Return: return x
+ * _strchr - Locates a character in a string
+ * @s: type char pointer
+ * @c: type char memory area
+ * Return: NULL
  */
-
-unsigned int _strspn(char *s, char *accept)
+char *_strchr(char *s, char c)
 {
-	unsigned int str;
-	int x, y, z;
-
-	x = 0;
-	while (s[x] != '\0')
+	while (*s != '\0')
 	{
-		z = 0;
-		for (y = 0; accept[y] != '\0'; y++)
-		{
-			if (s[x] == accept[y])
-			{
-				z = 1;
-			}
-		}
-		y = 0;
-		if (z == 0)
-			break;
-		str++;
-		x++;
+		if (*s == c)
+			return (s);
+		s++;
 	}
-	return (x);
+	if (*s == c)
+		return (s);
+	else
+		return (NULL);
 }
