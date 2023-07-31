@@ -2,26 +2,24 @@
 #include <stdio.h>
 
 /**
- * _strstr - Locates a substring.
- * @haystack: type char str
- * @needle: type char sub str
- * Return: haystack or NULL.
+ * print_chessboard - Funtion that prints the chessboard.
+ * @a:type char str
+ * Return: Always 0.
  */
-char *_strstr(char *haystack, char *needle)
+void print_chessboard(char (*a)[8])
 {
-	while (*haystack != '\0')
-	{
-		char *all = haystack;
-		char *ptt = needle;
+	int x, y;
 
-		while (*ptt == *haystack && *ptt != '\0' && *haystack != '\0')
+	x = 0;
+	while (x < 8)
+	{
+		y = 0;
+		while (y < 8)
 		{
-			haystack++;
-			ptt++;
+			_putchar(a[x][y]);
+			y++;
 		}
-		if (*ptt == '\0')
-			return (all);
-		haystack = all + 1;
+		_putchar('\n');
+		x++;
 	}
-	return (NULL);
 }
